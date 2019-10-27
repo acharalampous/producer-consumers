@@ -1,6 +1,8 @@
 # Producer-Consumers
-
-Solution to communication problem between 1 Producer and N Consumers.
+<p align="center">
+  <img width = 400 height = 279 src="prob_diagram.jpg">
+</p>
+<br />Solution to communication problem between 1 Producer and N Consumers.
 A Master Process (Producer) forks N Child Processes (Consumers). The Producer creates locally a table of M random numbers (M > 3000) and the Consumers create an empty table of same size. The problem is that they must copy all the numbers in the Producer's table and place them in the same order inside their table, using a shared memory segment that can hold only 1 number. In the shared memory, other than the single number is contained a time stamp, in order to compute the copy latency for each consumer. Master and each Child Process write to results.txt file the numbers in table and Latency.
 
 ## Deployment
@@ -33,9 +35,9 @@ Execute using:
 ### Results
 Results in file results.txt created after execution.
 
-## Authors
+## Author
 
-* **Andreas Charalampous** - https://github.com/AndCharalampous
+**Andreas Charalampous** - https://github.com/AndCharalampous
 
 ## License
 
